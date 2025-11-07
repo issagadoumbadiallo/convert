@@ -6,5 +6,8 @@ def test_main_output():
     captured_output = io.StringIO()
     sys.stdout = captured_output
     main()
-    sys.stdout = sys.__stdout__
+    # sys.stdout = sys.__stdout__
     assert captured_output.getvalue().strip() == "Projet Python convert fonctionnel !"
+    
+    
+test_main_output()
